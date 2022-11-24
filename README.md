@@ -45,7 +45,7 @@ npm start
 ```
 Below is the link to the live deployment:
 
- https://jasminshea.github.io/Note-Taker/
+https://note-taker-jasmin.herokuapp.com/
 
 
 
