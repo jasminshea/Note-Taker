@@ -31,6 +31,7 @@ app.get('*', (req, res) =>
 
 const writeToFile = (destination, content) =>
   fs.writeFile(destination, JSON.stringify(content, null, 4), (err) =>
+    err ? console.error(err) : console.info(`\nData written to ${destination}`)
   );
 
 const readFromFile = util.promisify(fs.readFile);
@@ -76,3 +77,4 @@ app.post('/api/notes', (req, res) => {
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
+
